@@ -1,0 +1,58 @@
+@import "_util";
+.settings-menu {
+  float: right;
+
+  .settings-icon {
+    @extend .center-parent;
+    height: 50px;
+    width: 50px;
+
+    background: black;
+
+    .settings-circle {
+      @extend .center;
+      height: 75%;
+      width: 75%;
+      border-radius: 50%;
+
+      background: white;
+    }
+
+    .fa-gear {
+      margin-top: 11px;
+      margin-left: 6px;
+
+      color: gainsboro;
+    }
+  }
+
+  .dropdown {
+    position: absolute;
+
+    width: 105px;
+    margin-left: -55px;
+    overflow: hidden;
+
+    background: green;
+
+    .item {
+      padding: 1px;
+    }
+  }
+
+  // The dropdown animation:
+  .dropdown-enter {
+    max-height: 0;
+  }
+  .dropdown-enter.dropdown-enter-active {
+    max-height: 75px;
+    transition: max-height 100ms ease-in;
+  }
+  .dropdown-leave {
+    max-height: 75px;
+  }
+  .dropdown-leave.dropdown-leave-active {
+    max-height: 0;
+    transition: max-height 200ms ease-in;
+  }
+}

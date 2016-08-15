@@ -1,0 +1,15 @@
+.classpath
+.project
+.idea/
+.settings/
+bin/
+dist/
+lib/
+node_modules/
+out/
+target/
+*.iml
+bundle.js
+bundle_dev.js
+bundle_prod.js
+npm-debug.log

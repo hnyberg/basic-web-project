@@ -1,0 +1,54 @@
+.order-constant-info {
+  position: relative;
+
+  .order-constant-info-bar {
+    background: #d7d7d7;
+
+    .title {
+      display: inline-block;
+      padding: 10px 5px 5px 10px;
+    }
+
+    .value {
+      display: inline-block;
+      padding: 10px 15px 5px 0px;
+
+      font-weight: bold;
+    }
+  }
+
+  .show-button {
+    float: right;
+  }
+
+  .dropdown {
+    position: absolute;
+
+    width: 100%;
+    border-top: #000000 solid 2px;
+    overflow: hidden;
+
+    background: #4b4b4b;
+
+    .sidebar {
+      float: left;
+
+      .sidebar-item {
+        display: block;
+      }
+
+      .selected {
+        background: white;
+      }
+    }
+
+    .main {
+      width: auto;
+      min-height: 300px;
+      overflow: hidden;
+
+      background: #d7d7d7;
+    }
+  }
+
+}
